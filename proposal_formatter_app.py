@@ -6,18 +6,13 @@ Install and run:
     pip install streamlit pymupdf pypdf
     streamlit run proposal_formatter_app.py
 """
-install 
+
 import io
 import re
 import tempfile
 from pathlib import Path
 from datetime import datetime
-import subprocess
-import sys
 
-subprocess.run([sys.executable, "-m", "pip", "install", "PyMuPDF"], check=True)
-
-import fitz 
 import streamlit as st
 import fitz  # PyMuPDF
 from pypdf import PdfReader, PdfWriter
